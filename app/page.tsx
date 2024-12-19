@@ -42,7 +42,7 @@ const socialNetworks = [
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="text-white h-8 w-8"
+        className="text-white h-6 w-6"
       >
         <title>GitHub</title>
         <path
@@ -59,7 +59,7 @@ const socialNetworks = [
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="text-white h-8 w-8"
+        className="text-white h-6 w-6"
       >
         <title>LinkedIn</title>
         <path
@@ -76,7 +76,7 @@ const socialNetworks = [
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="text-white h-8 w-8"
+        className="text-white h-6 w-6"
       >
         <title>X</title>
         <path
@@ -119,15 +119,16 @@ export default function Home() {
             ideas into elegant solutions that leave a lasting impact.
           </p>
           <Button className="rounded-full px-8 py-5">Let's talk</Button>
-
+        </section>
+        <div className="flex flex-col items-center justify-center pt-10">
           <Image
-            className="pt-5"
+            className="rounded-3xl object-cover"
             src={"/hero.png"}
             alt="hero"
             width={965}
             height={589}
           />
-        </section>
+        </div>
 
         <section className="flex flex-col items-center justify-center space-y-5 pt-28 text-center">
           <h1 className="text-4xl font-bold max-w-60">
