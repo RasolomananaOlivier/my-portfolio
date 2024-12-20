@@ -8,15 +8,16 @@ type ProjectCardProps = {
   title: string;
   description: string;
   techStack?: string[];
+  codeAvailable: boolean;
 };
 
 const ProjectCard = (props: ProjectCardProps) => {
-  const { projectPic, title, description, techStack } = props;
+  const { projectPic, title, description, techStack, codeAvailable } = props;
 
   return (
     <div className="w-full flex flex-col items-start space-y-3">
       <Image
-        // className="w-full"
+        className="rounded-lg"
         src={projectPic}
         alt="hero"
         width={900}
@@ -38,16 +39,19 @@ const ProjectCard = (props: ProjectCardProps) => {
           View Project
           <ExternalLink />
         </Button>
-        <Button variant="outline" className="rounded-full">
-          Code
-          <Image
-            src="/github.svg"
-            alt="github"
-            className="w-4 h-4"
-            width={24}
-            height={24}
-          />
-        </Button>
+
+        {codeAvailable && (
+          <Button variant="outline" className="rounded-full">
+            Code
+            <Image
+              src="/github.svg"
+              alt="github"
+              className="w-4 h-4"
+              width={24}
+              height={24}
+            />
+          </Button>
+        )}
       </div>
     </div>
   );

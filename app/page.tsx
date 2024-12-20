@@ -6,18 +6,24 @@ import SocialNetwork from "@/components/SocialNetwork";
 
 const projects = [
   {
-    projectPic: "/hero.png",
-    title: "Project 1",
+    projectPic: "/Fedhubs.jpg",
+    title: "Fedhubs",
     description:
-      "Whether it's a dynamic web application or a sleek mobile app you need, I provide top-notch full stack development for all your digital projects.",
-    techStack: ["React", "Node", "MongoDB"],
+      "A cross-plateform application that allows users to discover nearby restaurants " +
+      "and seamlessly book tables based on their preferences. The app combines " +
+      "location-based search with an intuitive user interface to enhance the dining experience." +
+      " Users can browse restaurant details, view menus, check reviews and ratings, and reserve tables with just a few taps.",
+    techStack: ["Flutter", "React js", "Laravel", "MySQL"],
+    codeAvailable: false,
   },
   {
-    projectPic: "/hero.png",
-    title: "Project 2",
+    projectPic: "/Fedhubs_pro.png",
+    title: "Fedhubs Pro",
     description:
-      "Whether it's a dynamic web application or a sleek mobile app you need, I provide top-notch full stack development for all your digital projects.",
-    techStack: ["React", "Node", "MongoDB"],
+      "A powerful mobile and web application designed for restaurateurs to efficiently manage their restaurant operations. " +
+      "The app provides an all-in-one solution for handling menus, reservations, and fidelities, streamlining day-to-day tasks and enhancing operational efficiency.",
+    techStack: ["Flutter", "Laravel", "MySQL"],
+    codeAvailable: false,
   },
   {
     projectPic: "/hero.png",
@@ -25,6 +31,7 @@ const projects = [
     description:
       "Whether it's a dynamic web application or a sleek mobile app you need, I provide top-notch full stack development for all your digital projects.",
     techStack: ["React", "Node", "MongoDB"],
+    codeAvailable: true,
   },
   {
     projectPic: "/hero.png",
@@ -32,6 +39,7 @@ const projects = [
     description:
       "Whether it's a dynamic web application or a sleek mobile app you need, I provide top-notch full stack development for all your digital projects.",
     techStack: ["React", "Node", "MongoDB"],
+    codeAvailable: true,
   },
 ];
 
@@ -232,7 +240,7 @@ export default function Home() {
           </p>
         </div>
 
-        <section className="items-center justify-center pt-10 columns-1 md:columns-2 space-y-8 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-8 mt-10">
           {projects.map((project) => (
             <ProjectCard
               key={project.title}
@@ -240,6 +248,7 @@ export default function Home() {
               title={project.title}
               description={project.description}
               techStack={project.techStack}
+              codeAvailable={project.codeAvailable}
             />
           ))}
         </section>
