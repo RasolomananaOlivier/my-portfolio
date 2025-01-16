@@ -3,8 +3,9 @@ import ProjectCard from "@/components/ProjectCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import { Project } from "@/utils/types";
 
-const projects = [
+const projects: Project[] = [
   {
     projectPic: "/Fedhubs.jpg",
     title: "Fedhubs",
@@ -15,6 +16,7 @@ const projects = [
       " Users can browse restaurant details, view menus, check reviews and ratings, and reserve tables with just a few taps.",
     techStack: ["Flutter", "React js", "Laravel", "MySQL"],
     codeAvailable: false,
+    previewUrl: "https://app.fedhubs.com",
   },
   {
     projectPic: "/Fedhubs_pro.png",
@@ -24,22 +26,27 @@ const projects = [
       "The app provides an all-in-one solution for handling menus, reservations, and fidelities, streamlining day-to-day tasks and enhancing operational efficiency.",
     techStack: ["Flutter", "Laravel", "MySQL"],
     codeAvailable: false,
+    previewUrl: "https://pro.fedhubs.com",
   },
   {
     projectPic: "/hero.png",
-    title: "Project 3",
+    title: "Prompt AI",
     description:
-      "Whether it's a dynamic web application or a sleek mobile app you need, I provide top-notch full stack development for all your digital projects.",
+      "Prompt AI is a platform designed to share and discover creative prompts for AI tools and applications. " +
+      "It enables users to explore, contribute, and curate prompts that inspire innovation and streamline productivity across various domains, including art, writing, and development.",
     techStack: ["React", "Node", "MongoDB"],
     codeAvailable: true,
+    previewUrl: null,
   },
   {
     projectPic: "/hero.png",
-    title: "Project 4",
+    title: "DevChronicles",
     description:
-      "Whether it's a dynamic web application or a sleek mobile app you need, I provide top-notch full stack development for all your digital projects.",
-    techStack: ["React", "Node", "MongoDB"],
+      "DevChronicles is a blog dedicated to exploring the world of development, from coding best practices to the latest trends in technology. " +
+      "It offers insightful articles, tutorials, and personal experiences aimed at developers of all skill levels.",
+    techStack: ["Under Development"],
     codeAvailable: true,
+    previewUrl: null,
   },
 ];
 
@@ -155,14 +162,7 @@ export default function Home() {
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-8 mt-10">
           {projects.map((project) => (
-            <ProjectCard
-              key={project.title}
-              projectPic={project.projectPic}
-              title={project.title}
-              description={project.description}
-              techStack={project.techStack}
-              codeAvailable={project.codeAvailable}
-            />
+            <ProjectCard key={project.title} project={project} />
           ))}
         </section>
 
