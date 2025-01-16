@@ -6,8 +6,9 @@ import { Button } from "./ui/button";
 import { BicepsFlexed } from "lucide-react";
 import { handleGetInTouch } from "@/utils/functions";
 import SocialNetwork from "./SocialNetwork";
+import { SocialLink } from "@/utils/types";
 
-const socialNetworks = [
+const socialNetworks: SocialLink[] = [
   {
     icon: (
       <svg
@@ -24,6 +25,7 @@ const socialNetworks = [
       </svg>
     ),
     label: "Github",
+    url: "https://github.com/RasolomananaOlivier",
   },
   {
     icon: (
@@ -41,6 +43,7 @@ const socialNetworks = [
       </svg>
     ),
     label: "Linkedin",
+    url: "https://www.linkedin.com/in/rasolomanana-herimanitra-olivier",
   },
   {
     icon: (
@@ -58,6 +61,7 @@ const socialNetworks = [
       </svg>
     ),
     label: "Twitter",
+    url: "https://x.com/OlivierFullDev",
   },
 ];
 
@@ -100,11 +104,7 @@ export default function Footer() {
 
         <div className="flex gap-3">
           {socialNetworks.map((social) => (
-            <SocialNetwork
-              key={social.label}
-              icon={social.icon}
-              label={social.label}
-            />
+            <SocialNetwork key={social.label} social={social} />
           ))}
         </div>
       </div>

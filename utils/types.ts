@@ -6,3 +6,9 @@ export type Project = {
   codeAvailable: boolean;
   previewUrl: string | null;
 };
+
+export type SocialLink = {
+  icon: JSX.Element;
+  label: string;
+  url: string;
+};
