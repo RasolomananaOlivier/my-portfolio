@@ -11,11 +11,11 @@ export default function Hero() {
       <section className="flex flex-col items-center justify-center space-y-4 pt-10 text-center">
         <h1 className="">
           It's <span className="font-bold">Olivier</span>, Your Full Stack
-          Developer Parter.
+          Developer Partner.
         </h1>
         <p className="text-3xl md:text-5xl font-bold max-w-screen-md">
-          Build Your <span className="text-violet-600">Digital Solution</span>{" "}
-          Effortlessly With Full Stack Solutions
+          <span className="text-violet-600"> Code. Design. Innovate.</span> Your
+          Full-Stack Partner.
         </p>
         <p className="py-3 max-w-lg text-gray-700">
           A passionate developer crafting digital experiences one line of code

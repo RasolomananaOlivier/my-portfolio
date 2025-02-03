@@ -16,7 +16,9 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center py-5">
-      <h1 className="text-2xl font-bold ml-2">Olivier.</h1>
+      <h1 className="text-2xl font-bold ml-2">
+        Olivier<span className="text-violet-600">Dev</span>.
+      </h1>
 
       <div className="flex space-x-4">
         <Button variant="outline" className="rounded-full" onClick={downloadCV}>
