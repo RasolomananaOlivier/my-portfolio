@@ -96,7 +96,7 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col md:flex-row gap-3 items-center justify-center pt-10">
-          <div className="bg-slate-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
+          <div className="flex flex-col items-center bg-slate-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
             <div className="p-10">
               <Image src="/design.svg" alt="design" width={300} height={150} />
             </div>
@@ -108,8 +108,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-zinc-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
-            <Image src="/webdev.svg" alt="web" width={300} height={200} />
+          <div className="flex flex-col items-center bg-zinc-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
+            <Image src="/webdev.svg" alt="web" width={400} height={200} />
 
             <div className="p-3 flex flex-col space-y-2">
               <h2 className="font-bold text-2xl">Web Apps.</h2>
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
+          <div className="flex flex-col items-center bg-gray-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
             <Image src="/mobiledev.svg" alt="web" width={400} height={200} />
 
             <div className="p-3 flex flex-col space-y-2">
