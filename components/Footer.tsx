@@ -67,12 +67,12 @@ const socialNetworks: SocialLink[] = [
 
 export default function Footer() {
   return (
-    <section className="flex flex-col md:flex-row gap-5 p-4 md:p-10 bg-neutral-950 rounded-3xl my-20">
+    <section className="flex flex-col md:flex-row gap-10 p-4 md:p-10 bg-neutral-950 rounded-3xl my-20">
       <Image
-        src="/hero.png"
-        alt="web"
+        src="/olivier.jpg"
+        alt="Olivier"
         width={400}
-        height={400}
+        height={500}
         className="object-cover rounded-2xl"
       />
       <div className="flex flex-col space-y-5 text-white">
@@ -90,7 +90,7 @@ export default function Footer() {
           I am always eager to learn new technologies and take on challenging
           projects. If you're looking for a dedicated developer who can bring
           your vision to life and ensure the technical excellence of your
-          projects.
+          projects, then :
         </p>
         <div>
           <Button

@@ -96,15 +96,10 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col md:flex-row gap-3 items-center justify-center pt-10">
-          <div className="bg-slate-100 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
-            <Image
-              src="/design.png"
-              alt="web"
-              width={350}
-              height={200}
-              className="rotate-6 relative bottom-5"
-            />
-
+          <div className="bg-slate-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
+            <div className="p-10">
+              <Image src="/design.svg" alt="design" width={300} height={150} />
+            </div>
             <div className="p-3 flex flex-col space-y-2">
               <h2 className="font-bold text-2xl">Design UI/UX.</h2>
               <p className="text-gray-700">
@@ -113,38 +108,25 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-slate-100 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
-            <Image
-              src="/web.png"
-              alt="web"
-              width={400}
-              height={200}
-              className="rotate-6 relative bottom-5"
-            />
+          <div className="bg-zinc-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
+            <Image src="/webdev.svg" alt="web" width={300} height={200} />
 
             <div className="p-3 flex flex-col space-y-2">
-              <h2 className="font-bold text-2xl">Web apps.</h2>
+              <h2 className="font-bold text-2xl">Web Apps.</h2>
               <p className="text-gray-700">
-                Crafting Intuitive and Engaging User Experiences for Every
-                Challenge
+                Building Powerful and Adaptive Digital Experiences for Every
+                Endeavor.
               </p>
             </div>
           </div>
 
-          <div className="bg-slate-100 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
-            <Image
-              src="/mobile.png"
-              alt="web"
-              width={400}
-              height={200}
-              className="rotate-6 relative bottom-5"
-            />
+          <div className="bg-gray-50 rounded-lg max-w-full md:max-w-[300px] overflow-hidden">
+            <Image src="/mobiledev.svg" alt="web" width={400} height={200} />
 
             <div className="p-3 flex flex-col space-y-2">
-              <h2 className="font-bold text-2xl">Mobile apps.</h2>
+              <h2 className="font-bold text-2xl">Mobile Innovation.</h2>
               <p className="text-gray-700">
-                Crafting Intuitive and Engaging User Experiences for Every
-                Challenge
+                Creating Fluid and Engaging Mobile Experiences on the Go.
               </p>
             </div>
           </div>

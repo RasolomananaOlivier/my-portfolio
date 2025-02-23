@@ -14,7 +14,7 @@ export default function Hero() {
           Developer Partner.
         </h1>
         <p className="text-3xl md:text-5xl font-bold max-w-screen-md">
-          <span className="text-violet-600"> Code. Design. Innovate.</span> Your
+          <span className="text-violet-600"> Design. Code. Innovate.</span> Your
           Full-Stack Partner.
         </p>
         <p className="py-3 max-w-lg text-gray-700">
